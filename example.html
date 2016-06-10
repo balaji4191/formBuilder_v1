@@ -1,0 +1,36 @@
+<div ng-controller="MyController" class="container">
+
+ <!-- <h1>
+    Schema Editor with Form Preview
+  </h1>
+  <p>
+    Because of internet ...
+  </p> -->
+
+  <div fg-tabs class="sec-width nam-ul-tab">
+
+    <div fg-tabs-pane="Schema Editor">
+		<form class="form-horizontal" name="myForm.$state">
+			<div fg-edit
+				fg-schema="myForm.schema" extracts='myForm.extracts'>
+			</div>
+		</form>
+    </div>
+
+    <div class="nam-form" fg-tabs-pane="Form Preview" disabled="myForm.$state.$invalid">
+      <div class="formFinish"><button>CANCEL</button><button ng-click=submitForm()>SUBMIT</button></div>
+      <div class="fg-edit-canvas-area" ng-include="'preview.html'" extracts='myForm.extracts'></div>
+		<!-- <div>{{myForm.extracts}}</div>
+		<p>{{myForm.}}</p> -->
+    </div>
+
+    <div fg-tabs-pane="Form Schema">
+      <div jsonify="myForm"></div>
+    </div>
+
+  </div>
+  
+	
+ 
+
+</div>

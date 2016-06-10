@@ -1,0 +1,268 @@
+/* Styles go here */
+/* @font-face {
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
+} */
+*{ padding:0; margin:0; font-family: 'Oxygen', sans-serif;!important;font-weight:normal;}
+body {
+  background-color: #f7f7f7;
+}
+
+html {
+  overflow-y: scroll;
+}
+.container-fluid{padding:0;z-index: 500001;}
+header{padding:15px;  position:fixed; width:100%; top:0; left:0; background:#fff; z-index:1;height:100px;border-bottom: 2px solid #005890;}
+header h1{color:#4a4a4a;font-size:30px;margin-top:15px;padding:0;text-align:right}
+header div.col-lg-9, header div.col-lg-3{padding:15px}
+header div.col-lg-3{background:#fff;text-align:left}
+header div.col-lg-3 img{width:135px;}
+label{font-weight:normal}
+.container{ margin-top:100px; display:block;}
+.nam-form .container{width:100%;padding:0}
+.sec-width{width:100%;float:left;}
+.nam-form-width{padding:0;margin-top:-47px}
+.nav-tabs{border:0;padding:0;background: #fff;width:100%;height:47px;}
+.fg-field-properties{overflow:hidden}
+.fg-field-properties .nav-tabs{display:none}
+.nav-tabs>li{width:12.5%}
+.nav-tabs>li>a{margin-right:0;text-align: center;font-size: 18px;color: #fff;border-radius:0;border:0;background:rgba(107, 107, 107, 0.72);padding:11px 15px;}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus,.nav-tabs>li>a:hover{background-color:rgb(105, 197, 228)!important;border:0;color:#fff}
+.tabbable.sec-width .tab-content{padding-left:12px}
+.fg-tabs .tab-content{padding-top:0;border:0}
+/* .nav-tabs li:nth-child(1){margin-left:24.95%} */
+.nav-tabs li:nth-child(3){display:none;}
+/* .nam-form .nam-form-drag{background:rgb(53,53,61);margin-top:-43px} */
+.nam-form .nam-form-drag .fg-field-overlay{display:none}
+.nam-form .nam-form-drag .fg-field-inner .col-sm-9{display:none}
+.nam-form .nam-form-drag .fg-field{padding:0;border:0}
+.nam-form  .fg-edit-canvas .fg-field, .fg-edit-palette .fg-field:hover{background-color:#fff}
+.nam-form .form-horizontal .control-label{text-align:left}
+.nam-form-width .nam-ele-width{width:100%}
+.nam-form .nam-form-drag .fg-field-inner label{text-align:center;}
+.nam-form .nam-form-drag .fg-field.col-sm-5{border:1px solid;padding:4px;width:46%;background:#fff}
+.nam-form .nam-form-drag .fg-field.col-sm-5:hover{border:1px dashed}
+.nam-form .nam-form-drag .fg-edit-palette fieldset>div:nth-child(odd){float:right}
+.nam-form .nam-form-drag .fg-edit-palette fieldset>div:nth-child(1){float:left;width:100%}
+.nam-form hr{margin:0}
+.fg-field-overlay .btn-toolbar.btn-toolbar-right button:nth-child(2){display:none}
+.fg-field-overlay .btn-toolbar.btn-toolbar-right button:nth-child(3 ){display:none}
+.nam-form .fg-edit-palette{color: #005890;}
+.nam-form .paletteControl{position: fixed;bottom: 0;z-index: 20001;display: inline-block;width: 303px;}
+.nam-form .fg-edit-canvas-area{border-radius:0}
+.fg-edit-palette legend{color:#fff;margin-top:20px;background: #005890; padding: 5px 10px;font-size:18px;}
+.fg-edit-palette legend:hover{color:#fff}
+.nam-form .themeuseContainer{border-width: 2px;
+    border-style: solid;}
+.nam-form .themeNotuseContainer{
+    border-width: 2px;
+    border-style: solid;
+}   
+.nam-form .fg-edit-canvas-area{
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    min-height: 1048px;
+    box-shadow: 2px 2px 5px #888888;
+}
+.nam-form .nam-ele-width{text-align:left}
+.nam-form .themeUseStyle .themeUseSmall{
+    padding: 12px;
+}
+ .nam-form .themeNotUseStyle .theneNotUseSmall{
+ padding: 12px;
+ }   
+.nam-form .createButton{
+    text-align:center
+} 
+
+.nam-form .form-extras-checkbox {width: 50px; float: right;}
+.ios-toggle,.ios-toggle:active {  position: absolute;  top: -5000px;  height: 0;  width: 0;  opacity: 0;  border: none;  outline: none}
+.checkbox-label {   display: block;   position: relative;   -webkit-border-radius: 18px;   -moz-border-radius: 18px;   border-radius: 18px;   cursor: pointer   }
+.checkbox-label:before {  content: '';  display: block;  position: absolute;  z-index: 1;  line-height: 34px;  text-indent: 40px;  height: 25px;  width: 25px;  /*border-radius*/  -webkit-border-radius: 100%;
+ -moz-border-radius: 100%;  border-radius: 100%;  top: 0px;  left: 0px;  right: auto;  background: white;  /*box-shadow*/  -webkit-box-shadow: 0 3px 3px rgba(0,0,0,.2), 0 0 0 1px #dddddd;
+ -moz-box-shadow: 0 3px 3px rgba(0,0,0,.2), 0 0 0 1px #dddddd;  box-shadow: 0 3px 3px rgba(0,0,0,.2), 0 0 0 1px #dddddd}
+.ios-toggle:checked + .checkbox-label {  /*box-shadow*/  -webkit-box-shadow: inset 0 0 0 20px rgba(19,191,17,1), 0 0 0 2px rgba(19,191,17,1);  -moz-box-shadow: inset 0 0 0 20px rgba(19,191,17,1), 0 0 0 2pxrgba(19,191,17,1);
+ box-shadow: inset 0 0 0 20px rgba(19,191,17,1), 0 0 0 2px rgba(19,191,17,1);}
+.ios-toggle:checked + .checkbox-label:before {  left: calc(100% - 25px);  /*box-shadow*/  -webkit-box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0,0,0,.3);  -moz-box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0,0,0,.3);  box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0,0,0,.3);}
+.ios-toggle:checked + .checkbox-label:after {  content: attr(data-on);  left: 60px;  width: 25px;}
+.ios-toggle + .checkbox-label {  -webkit-box-shadow: inset 0 0 0 0px rgba(19,191,17,1), 0 0 0 1px #dddddd;  -moz-box-shadow: inset 0 0 0 0px rgba(19,191,17,1), 0 0 0 1px #dddddd;  box-shadow: inset 0 0 0 0px rgba(19,191,17,1), 0 0 0 1px #dddddd;   height: 25px;  width: 100%;  background: white;}
+:after, :before, * {    -webkit-box-sizing: border-box;    -moz-box-sizing: border-box;    box-sizing: border-box}
+
+.ios-toggle:checked + .checkbox-label:after { color: rgba(19,191,17,1) }
+
+.nam-form .signout-icon {
+   position: relative;
+}
+
+.nam-form .oval_1 {   
+    width: 13px;
+    height: 17px;
+    background-color: #64cd6d;
+    border: solid 0.5px #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    left: 7px;
+}
+
+.nam-form .fa {display: inline-block;font-family: FontAwesome!important;font-style: normal;font-weight: 400;line-height: 1;-webkit-font-smoothing: antialiased;margin-right:7px;}
+
+.nam-form signout-text {
+    margin-right: 25px;
+  color: #515457;
+  font-size: 17px;
+  vertical-align: text-bottom;
+}
+
+
+
+.fieldButton{
+background: #006298;
+    padding: 10px 25px;
+    color: #fff;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-radius:4px;
+}
+.paletteControl button{
+    list-style: none;
+    float: left;
+    width: 48%;
+    border:0;
+}
+.nam-form .fg-edit-palette .fg-field{
+    background-color:transparent;
+}
+.nam-form .quickStylescontainer{
+    padding:20px;
+}
+rzslider .rz-bar {
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 10px;
+    background: #d8e0f3;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 10px;
+}
+rzslider{
+    width:50%;
+    margin: 0px 0 0px 0;
+}
+rzslider .rz-pointer:after {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 5px;
+    height: 5px;
+    background: #ffffff;
+    border-radius: 4px;
+    content: '';
+}
+rzslider .rz-pointer {
+    top: -5px;
+    z-index: 3;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #0db9f0;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;}
+    
+rzslider .rz-bubble.rz-limit {
+    opacity: 0 !important;
+}
+rzslider .rz-bubble{
+opacity: 0 !important;
+}
+
+.small{width:30%;float:left;display:inline-block}
+.medium{width:50%;float:left;display:inline-block}
+.high{width:100%;float:left;display:block}
+.fg-edit-canvas .fg-field.fg-edit-canvas-field{border:0}
+.fg-edit-canvas-area i.fa{display:none}
+.fg-edit-canvas-area .pageBtn i.fa{display:inline}
+
+
+
+
+.themeContainer{min-height:900px;padding: 10px;}
+.themeuseContainer, .themeNotuseContainer{border: 1px solid #005890;color: #005890;text-align: center;border-radius: 11px;}
+.form-extras{color:#fff;border-bottom: 1px solid #e2e2e2;padding-bottom: 11px;}
+.form-extras label{color:#005890}
+.form-extras legend{color: #fff;margin-top: 20px;background: #005890;padding: 5px 10px;}
+.paletteControl button:nth-child(2){float:right}
+.nam-theme-container{min-height:950px}
+.nam-form .fg-edit-canvas-area{box-shadow:none;border:0}
+.nam-form .heading .control-label{text-align:center}
+
+.nam-form .fg-edit-canvas-field .fa {
+    display: none
+}
+
+.nam-form .col-sm-3 .fg-edit-canvas-field .col-sm-12 {
+    display: none
+}
+
+.nam-form .col-sm-9 .fg-edit-canvas .fg-field-properties {
+    display: none
+}
+
+.nam-form-edit-sec .fb-edit-field-block{display:none}
+
+.nam-form .nam-form-drag .nam-form-edit-sec.fg-field-inner{display:none}
+
+.nam-form-width .fg-field-properties{display:none}
+
+.nam-form .closeIcon {
+    float: right
+}
+.pageButton{background: #006298;padding: 8px 8px;color: #fff;width: 100px;display: block;text-align: center;border-radius: 4px;}
+.pager{margin:8px;}
+.pager li>a{cursor:pointer;display: inline-block !important;}
+.nam-form .tab {list-style-type: none;margin: 0;padding: 0;overflow: hidden;float: left;background-color: #f1f1f1;width:100%}
+
+.nam-form .tab li {float: left;width: 50%;}
+
+.nam-form .tab li a {text-align: center;padding: 20px 32px;text-decoration: none;transition: 0.3s;font-size: 35px;}
+
+.nam-form .tab li a:hover {background-color: #ffffff;}
+
+/* .fg-field-overlay{display:none!important} */
+/* .fg-form-fields .media-container{display:none}
+.nam-form-width .fbPreviewImg{display:none} */
+.pageBtn{position:relative}
+.pager{position: relative;
+    /* float: left; */
+    /* width: 100%; */
+    /* border: 1px solid; */
+    top: 0;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */}
+    .fg-field-required.has-error .control-label:after{color:red}
+
+.table-field-options input[type=checkbox], .table-field-options input[type=radio] {
+    display: none;
+}
+.fg-form-fields .nam-ele-width{width:100%}
+.nam-form .tab li a.tablinks{    padding: 5px 10px;
+    font-size: 15px;}
+.fb-horizontal{display:block}
+.fb-vertical{display:inline}
+.nam-form .formSubmit{
+   float: right;
+   position: relative;
+}
+
+.nam-form .col-sm-9 .schemaEdit {
+    text-align: center;
+}
+
+.nam-form .formFinish {
+    text-align: center;
+}
