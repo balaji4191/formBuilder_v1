@@ -13,9 +13,9 @@ myApp.controller('MyController', ['$scope','mySchema','serviceName','$http', fun
   $scope.myForm = {
     schema: [mySchema],
     extracts:{
-      'reCaptcha':false,
-      'location':false,
-      'media':false,
+      'reCaptcha':true,
+      'location':true,
+      'media':true,
       'registeration':true,
       'cookies':false,
       'ipTracking':false,
